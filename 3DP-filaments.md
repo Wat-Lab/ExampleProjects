@@ -31,3 +31,24 @@
 
 | **Filament**         | **Best / Common Use-Cases**                                                                 | **Where It Should *Not* Be Used**                                                                 |
 |----------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **PLA+**             | Prototypes, figurines, cosplay, basic mechanical parts, low-stress enclosures               | Outdoors, high-heat environments, flex or impact-loaded parts                                       |
+| **ABS**              | Automotive interior parts, enclosures, functional parts, solvent-welded assemblies          | Cold or poorly ventilated spaces, thin wall or fine detail models (warping, cracking risk)         |
+| **ASA**              | Outdoor enclosures, weatherproof parts, UV-exposed signage                                 | Unheated chambers or printers with poor temperature stability                                       |
+| **PETG**             | Food-safe containers (check MSDS), mechanical brackets, moisture-resistant prints           | Tight tolerances (stringy), overly flexible components, high-heat parts (>80°C)                    |
+| **TPU (95A)**        | Phone cases, gaskets, vibration dampening feet, cable organizers                           | Rigid structures, high-load parts, tight-tolerance gear mechanisms                                  |
+| **PC (Polycarbonate)**| High-impact parts, load-bearing brackets, transparent parts, protective housings           | Printers with weak chamber heating or no enclosure (it warps aggressively)                         |
+| **Nylon (PA)**       | Gears, hinges, clips, impact-resistant mechanical parts, jigs & fixtures                    | Wet environments without post-drying, tight tolerance or thin-walled parts due to warping           |
+| **NylonX (CF Nylon)**| Functional end-use parts, drone frames, high-stress mechanical components                   | Decorative prints, flexible components, non-abrasive nozzles                                        |
+| **Glass-Filled Nylon**| High rigidity brackets, structural parts, heat-resistant applications                      | Parts requiring flexibility or vibration resistance, unsupported printers (warping/cracking)        |
+| **CF PETG**          | RC car parts, stiff brackets, flat panels, tough enclosures                                | Decorative or clear prints (CF dulls appearance), parts requiring flexibility                       |
+| **Ultem (PEI)**      | Aerospace, automotive, high-temp connectors, sterilizable medical parts                     | Non-industrial printers, hobby-level applications, transparent aesthetic models                     |
+| **PPSU**             | Sterilizable surgical guides, chemical-exposed parts, flame-retardant components           | Printers not rated for 400°C+ nozzle temps, aesthetic prints, cost-sensitive projects               |
+| **PBT**              | Electrical connectors, automotive switches, chemically-resistant parts                      | Decorative models, unsupported parts needing good bed adhesion (can warp)                           |
+| **HIPS**             | Support material for ABS, lightweight enclosures, prototyping                              | Structural parts, anything exposed to high moisture (absorbs and weakens), decorative models       |
+
+---
+
+### Notes:
+- **CF/GF Composites** = Amazing for rigidity, but will rapidly wear out brass nozzles.
+- **Drying Required** = Especially important for Nylon, PC, and PBT.
+- **Ultem & PPSU** = Truly industrial-use only; overkill for 99% of hobby printing needs.
