@@ -5,6 +5,12 @@
 // WHAT: Loads quotes from /ext/apps_data/daily_quote/quotes.txt (one per line)
 // USE: Up/Down change; OK random; Back exit.
 // INSTALL: folder daily_quote; create quotes.txt on SD.
+// 1) Clone official firmware and install uFBT (Micro Flipper Build Tool).
+// 2) Create folder: firmware/applications_user/daily_quote/
+// 3) Put THIS file as: firmware/applications_user/daily_quote/daily_quote.c
+// 4) Create application.fam (copy below between ===) in the same folder.
+// 5) Build & run only this app:
+//    ufbt launch daily_quote
 // application.fam:
 // ===
 // App(
