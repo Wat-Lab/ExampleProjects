@@ -1,3 +1,30 @@
+/*
+**What it does**
+- Displays a list of your own NFC/LF tag UIDs from `/ext/apps_data/rfid_organizer/uid_list.txt`.
+- Lets you scroll and locally "favorite" entries (visual only).
+- **It never transmits, emulates, or replays any RF/NFC/LF signals.**
+
+**Prepare data**
+1. Insert a microSD card.
+2. Create the folder `/ext/apps_data/rfid_organizer/`.
+3. Create `uid_list.txt` with one UID per line, e.g.:
+
+   ```
+   04:A2:BC:11:22:33
+   E2:04:12:34:56:78
+   0F:A1:B2:C3:D4:E5
+   ```
+   
+**Build (uFBT recommended)**
+- Install uFBT (Micro Flipper Build Tool) and VS Code integration per Flipper docs.
+- Put this folder under your firmware checkout at `applications_user/rfid_tag_organizer/`.
+- Build and launch just this app:
+  - With uFBT: `ufbt launch rfid_tag_organizer`
+  - With full FBT: in firmware root run `./fbt fap_rfid_tag_organizer` and then sideload the `.fap` from `dist/`.
+
+**Legal/Ethical**
+This app is intentionally **receive-only UI** and **organizer-only**. Do not attempt to modify it to send, emulate, or spam RF signals. Only interact with tags/readers you own or have explicit permission to test in a controlled lab. */
+
 # Project layout
 
 ```
@@ -213,29 +240,4 @@ int32_t rfid_tag_organizer_app(void* p) {
 }
 ```
 
-/*
-**What it does**
-- Displays a list of your own NFC/LF tag UIDs from `/ext/apps_data/rfid_organizer/uid_list.txt`.
-- Lets you scroll and locally "favorite" entries (visual only).
-- **It never transmits, emulates, or replays any RF/NFC/LF signals.**
 
-**Prepare data**
-1. Insert a microSD card.
-2. Create the folder `/ext/apps_data/rfid_organizer/`.
-3. Create `uid_list.txt` with one UID per line, e.g.:
-   ```
-   04:A2:BC:11:22:33
-   E2:04:12:34:56:78
-   0F:A1:B2:C3:D4:E5
-   ```
-
-**Build (uFBT recommended)**
-
-- Install uFBT (Micro Flipper Build Tool) and VS Code integration per Flipper docs.
-- Put this folder under your firmware checkout at `applications_user/rfid_tag_organizer/`.
-- Build and launch just this app:
-  - With uFBT: `ufbt launch rfid_tag_organizer`
-  - With full FBT: in firmware root run `./fbt fap_rfid_tag_organizer` and then sideload the `.fap` from `dist/`.
-
-**Legal/Ethical**
-This app is intentionally **receive-only UI** and **organizer-only**. Do not attempt to modify it to send, emulate, or spam RF signals. Only interact with tags/readers you own or have explicit permission to test in a controlled lab. */
