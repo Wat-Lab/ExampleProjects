@@ -6,7 +6,7 @@ The purpose behind these apps is to get from Idea to Function as quickly as poss
 Transparency clause: I often lean on AI to assist in creating thw code frameworks and do not want to mislead people that I'm writing these entirely on my own.
 
 ## Homelab / Makerspace
-[3D Printer Filaments](https://github.com/Wat-Lab/ExampleProjects/blob/main/3D%20Printer%20Filaments%20Comparison](https://github.com/Wat-Lab/ExampleProjects/blob/main/3DP-filaments.md)
+[3D Printer Filaments](https://github.com/Wat-Lab/ExampleProjects/blob/main/3DP-filaments.md)
 > This is focused on reducing waste & startup time for my home 3D printer which is a Prusa CoreONE
 
 ## Python: Scripts & API Pulls
